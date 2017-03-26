@@ -1,0 +1,35 @@
+html {
+  font-family: 'Droid Serif', serif;
+
+}
+
+header,
+footer {
+  background-color: #70ad55;
+  color: #fff;
+}
+
+input {
+  border-color: #6e8c62;
+}
+
+select {
+  border-color: #6e8c62;
+}
+
+textarea {
+  border-color: #6e8c62;
+  height: 10em;
+}
+
+span {
+  color: #6e8c62;
+}
+
+input[type="radio"] + label::before {
+  border-color: #6e8c62;
+}
+
+fieldset {
+  border: none;
+}
