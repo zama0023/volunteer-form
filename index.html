@@ -23,53 +23,52 @@
         <legend class="unit xs-1 giga bold push">Personal details</legend>
 
         <div class="grid">
-        <div class="unit xs-1 m-1-2 pad-t-1-2">
-          <label for="name">Full name</label>
-          <input id="name" name="name">
-          <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
-        </div>
+          <div class="unit xs-1 m-1-2 pad-t-1-2">
+            <label for="name">Full name</label>
+            <input id="name" name="name">
+            <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+          </div>
 
-        <div class="unit xs-1 m-1-2 pad-t-1-2 push">
-          <label for="nickname">What should we call you?</label>
-          <input id="nickname" name="name">
-          <p class="italic milli">What all your friends call you, e.g. “Liz”.</p>
-        </div>
+          <div class="unit xs-1 m-1-2 pad-t-1-2 push">
+            <label for="nickname">What should we call you?</label>
+            <input id="nickname" name="name">
+            <p class="italic milli">What all your friends call you, e.g. “Liz”.</p>
+          </div>
 
-        <div class="unit xs-1 m-1-2 push">
-          <label for="date">Date of birth</label>
-          <input id="date" type="number">
-        </div>
+          <div class="unit xs-1 m-1-2 push">
+            <label for="date">Date of birth</label>
+            <input id="date" type="date">
+          </div>
 
-        <div class="unit xs-1 m-1-2 push">
-          <label for="tshirt">T-shirt size</label>
-          <select id="subject" name="name">
-          <option>Select a t-shirt size</option>
-          <option>Fitted: XS</option>
-          <option>Fitted: S</option>
-          <option>Fitted: M</option>
-          <option>Fitted: L</option>
-          <option>Fitted: XL</option>
-          <option>Straight-cut: XS</option>
-          <option>Straight-cut: S</option>
-          <option>Straight-cut: M</option>
-          <option>Straight-cut: L</option>
-          <option>Straight-cut: XL</option>
-        </select>
-        </div>
+          <div class="unit xs-1 m-1-2 push">
+            <select id="subject" name="name">
+              <option>Select a t-shirt size</option>
+              <option>Fitted: XS</option>
+              <option>Fitted: S</option>
+              <option>Fitted: M</option>
+              <option>Fitted: L</option>
+              <option>Fitted: XL</option>
+              <option>Straight-cut: XS</option>
+              <option>Straight-cut: S</option>
+              <option>Straight-cut: M</option>
+              <option>Straight-cut: L</option>
+              <option>Straight-cut: XL</option>
+            </select>
+          </div>
 
-        <div class="unit xs-1 m-1-2 push">
-          <label for="email">Email</label>
-          <input id="email" type="email">
-        </div>
+          <div class="unit xs-1 m-1-2 push">
+            <label for="email">Email</label>
+            <input id="email" type="email">
+          </div>
 
-        <div class="unit xs-1 m-1-2 push">
-          <label for="tel">Phone number <span class="italic">(optional)</span></label>
-          <input id="tel" type="number">
+          <div class="unit xs-1 m-1-2 push">
+            <label for="tel">Phone number <span class="italic">(optional)</span></label>
+            <input id="tel" type="tel">
+          </div>
         </div>
-      </div>
-    </fieldset>
+      </fieldset>
 
-    <hr>
+      <hr>
 
       <fieldset class="gutter-1-2 push">
         <legend class="unit xs-1 bold tera push">Address</legend>
@@ -78,13 +77,13 @@
           <input id="address" name="name">
         </div>
         <div class="unit xs-1 m-1-2 push">
-          <label for="adress">City</label>
+          <label for="city">City</label>
           <input id="city" name="name">
         </div>
         <div class="unit xs-1 m-1-2 push">
           <label for="province">Province</label>
           <select id="province" name="name">
-            <option>Select a province</option>
+            <option value="">Select a province</option>
             <option>Alberta</option>
             <option>British Columbia</option>
             <option>Manitoba</option>
@@ -101,40 +100,55 @@
           </select>
         </div>
         <div class="unit xs-1 m-1-2 push">
-          <label for="postalcode">Postal code</lable>
+          <label for="postalcode">Postal code</label>
           <input id="postalcode" name="name">
         </div>
       </fieldset>
 
       <hr>
 
-
       <fieldset>
         <legend>What activities are you interested in helping with?</legend>
 
-        <input id="holes" type="checkbox">
-        <label for="holes">Digging holes</label>
+        <div>
+          <input id="holes" type="checkbox">
+          <label for="holes">Digging holes</label>
+        </div>
 
-        <input id="dirty" type="checkbox">
-        <label for="dirty">Getting Dirty</label>
+        <div>
+          <input id="dirty" type="checkbox">
+          <label for="dirty">Getting Dirty</label>
+        </div>
 
-        <input id="objects" type="checkbox">
-        <label for="objects">Lifting heavy objects</label>
+        <div>
+          <input id="objects" type="checkbox">
+          <label for="objects">Lifting heavy objects</label>
+        </div>
 
-        <input id="people" type="checkbox">
-        <label for="people">Driving people</label>
+        <div>
+          <input id="people" type="checkbox">
+          <label for="people">Driving people</label>
+        </div>
 
-        <input id="trees" type="checkbox">
-        <label for="trees">Driving people</label>
+        <div>
+          <input id="trees" type="checkbox">
+          <label for="trees">Driving people</label>
+        </div>
 
-        <input id="photos" type="checkbox">
-        <label for="photos">Taking photos</label>
+        <div>
+          <input id="photos" type="checkbox">
+          <label for="photos">Taking photos</label>
+        </div>
 
-        <input id="online" type="checkbox">
-        <label for="online">Onlie publishing</label>
+        <div>
+          <input id="online" type="checkbox">
+          <label for="online">Onlie publishing</label>
+        </div>
 
-        <input id="managing" type="checkbox">
-        <label for="managing">Managing people</label>
+        <div>
+          <input id="managing" type="checkbox">
+          <label for="managing">Managing people</label>
+        </div>
       </fieldset>
 
       <fieldset>
@@ -149,8 +163,8 @@
         <input id="blogging" type="checkbox">
         <label for="blogging">Writing & blogging</label>
 
-        <input id="Photography" type="checkbox">
-        <label for="Photography">Photography</label>
+        <input id="photography" type="checkbox">
+        <label for="photography">Photography</label>
 
         <input id="trail" type="checkbox">
         <label for="trail">Trail & hill climbing</label>
@@ -210,7 +224,7 @@
       <hr>
 
       <fieldset class="push-2">
-        <legend class="tera bold push-1-2 gutter-1-2" for="comment">Please let us know any comments or questions you may have.</legend>
+        <legend class="tera bold push-1-2 gutter-1-2">Please let us know any comments or questions you may have.</legend>
         <div class="gutter-1-2 push-1-4">
           <textarea id="comment" name="name"></textarea>
         </div>
@@ -220,12 +234,10 @@
     </form>
 
     <div class="text-center push pad-t pad-b">
-      <button class="tera gutter-2" type="submit">Apply</a>
+      <button class="tera gutter-2" type="submit">Apply</button>
     </div>
 
   </section>
   <footer class="milli island gutter-1-2 pad-b">© Tree Hugger International Organization</footer>
-
-
 </body>
 </html>
